@@ -1,18 +1,16 @@
 package process;
 
-import broker.Broker;
-import broker.FixedDelayBroker;
-import broker.GaussianDelayBroker;
-import org.junit.Ignore;
-import org.junit.Test;
+import static org.junit.Assert.assertNotSame;
+import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotSame;
-import static org.junit.Assert.assertTrue;
+import org.junit.Test;
+
+import broker.Broker;
+import broker.GaussianDelayBroker;
 
 /**
  * Integration smoke-test for {@link process.ConsensusCapableEventuallyStrongFailureDetectorProcess}.

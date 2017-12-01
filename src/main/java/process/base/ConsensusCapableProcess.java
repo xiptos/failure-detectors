@@ -1,9 +1,7 @@
 package process.base;
 
-import com.sun.xml.internal.ws.util.CompletedFuture;
 import detector.FailureDetector;
 import org.apache.log4j.Logger;
-import process.consensus.StrongConsensus;
 
 import java.util.concurrent.*;
 

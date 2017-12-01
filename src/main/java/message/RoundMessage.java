@@ -5,7 +5,11 @@ package message;
  */
 public abstract class RoundMessage extends TimestampedProcessToProcessMessage {
 
-    private final int round;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3486901611408592243L;
+	private final int round;
 
     /**
      * Construct a new message.

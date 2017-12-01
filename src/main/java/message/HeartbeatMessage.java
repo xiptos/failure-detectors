@@ -1,6 +1,6 @@
 package message;
 
-import static broker.ActiveMqBroker.*;
+import static broker.ActiveMqBroker.BROADCAST_DESTINATION;
 
 /**
  * A heartbeat message that is broadcast.
@@ -8,6 +8,11 @@ import static broker.ActiveMqBroker.*;
 public class HeartbeatMessage extends TimestampedProcessToProcessMessage {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8703775455343817231L;
+
+	/**
      * Construct a new heartbeat to be broadcast.
      *
      * @param source ID of the source process.

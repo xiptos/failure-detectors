@@ -5,7 +5,11 @@ package message;
  */
 public class OutcomeMessage extends ValueMessage {
 
-    private final boolean unanimous;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -796482501115972599L;
+	private final boolean unanimous;
 
     /**
      * Construct a new message.

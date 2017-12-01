@@ -1,11 +1,8 @@
 package process.base;
 
 import listener.MessageListener;
-import message.internal.ProcessMessage;
-import message.ProcessToProcessMessage;
 import message.TimestampedProcessToProcessMessage;
-
-import java.util.concurrent.Future;
+import message.internal.ProcessMessage;
 
 /**
  * A process that communicates with other processes in order to achieve something in a distributed system.

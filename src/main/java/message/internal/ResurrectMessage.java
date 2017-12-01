@@ -5,7 +5,11 @@ package message.internal;
  */
 public class ResurrectMessage implements BrokeredMessage {
 
-    private final int processId;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 4682104469409437061L;
+	private final int processId;
 
     /**
      * Construct a new message.

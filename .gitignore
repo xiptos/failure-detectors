@@ -11,3 +11,5 @@ target/
 .DS_Store
 .classpath
 .pyc
+/.gradle/
+/bin/

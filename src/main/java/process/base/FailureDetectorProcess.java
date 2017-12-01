@@ -1,7 +1,6 @@
 package process.base;
 
 import detector.FailureDetector;
-import listener.MessageListener;
 
 /**
  * An {@link Process} with a {@link FailureDetector} module.

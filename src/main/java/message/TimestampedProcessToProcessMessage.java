@@ -5,7 +5,11 @@ package message;
  */
 public class TimestampedProcessToProcessMessage implements ProcessToProcessMessage, TimestampedMessage {
 
-    private final int source;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1259111770926711904L;
+	private final int source;
     private final int destination;
     private final long timestamp;
 

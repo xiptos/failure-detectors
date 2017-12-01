@@ -1,11 +1,10 @@
 package detector.timeout;
 
-import detector.FailureDetector;
+import static broker.ActiveMqBroker.DELAY;
+import static detector.StronglyCompleteFailureDetector.HEARTBEAT_PERIOD_MS;
+
 import detector.StronglyCompleteFailureDetector;
 import message.TimestampedMessage;
-
-import static broker.ActiveMqBroker.DELAY;
-import static detector.StronglyCompleteFailureDetector.*;
 
 /**
  * An adaptive {@link TimeoutStrategy} based on a process' communication history.

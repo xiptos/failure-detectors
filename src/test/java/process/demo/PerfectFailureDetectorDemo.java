@@ -1,17 +1,17 @@
 package process.demo;
 
-import broker.Broker;
-import broker.FixedDelayBroker;
-import detector.PerfectFailureDetector;
-import org.junit.Ignore;
-import org.junit.Test;
-import process.PerfectFailureDetectorProcess;
-import process.ProcessSmokeTest;
+import static java.lang.Thread.sleep;
 
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
-import static java.lang.Thread.sleep;
+import org.junit.Ignore;
+import org.junit.Test;
+
+import broker.Broker;
+import broker.FixedDelayBroker;
+import process.PerfectFailureDetectorProcess;
+import process.ProcessSmokeTest;
 
 /**
  * Demo of {@link process.PerfectFailureDetectorProcess}. Fixed delay is used.

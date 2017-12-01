@@ -1,27 +1,20 @@
 package process;
 
-import broker.Broker;
-import broker.FailureInjector;
-import broker.FixedDelayBroker;
-import broker.GaussianDelayBroker;
-import org.apache.log4j.Logger;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.After;
 import org.junit.Before;
-import process.base.*;
-import process.base.Process;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
+import broker.Broker;
+import broker.FailureInjector;
+import process.base.Process;
 
 /**
  * Util class with convenience methods for process smoke tests.
  */
 public abstract class ProcessSmokeTest<T extends process.base.Process> {
-    private static final Logger LOG = Logger.getLogger(ProcessSmokeTest.class);
 
     private Broker broker;
     private FailureInjector failureInjector;

@@ -1,18 +1,15 @@
 package process;
 
-import broker.Broker;
-import broker.FixedDelayBroker;
-import broker.GaussianDelayBroker;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import process.base.*;
+import static java.lang.Thread.sleep;
+import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
-import static java.lang.Thread.*;
-import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+import broker.Broker;
+import broker.GaussianDelayBroker;
 
 /**
  * Integration smoke-test for {@link process.LeaderElectingEventuallyPerfectFailureDetectorProcess}.

@@ -1,11 +1,9 @@
 package detector.timeout;
 
-import broker.ActiveMqBroker;
-import detector.FailureDetector;
-import detector.StronglyCompleteFailureDetector;
-import message.TimestampedMessage;
+import static detector.StronglyCompleteFailureDetector.HEARTBEAT_PERIOD_MS;
 
-import static detector.StronglyCompleteFailureDetector.*;
+import broker.ActiveMqBroker;
+import message.TimestampedMessage;
 
 /**
  * A strategy for finding the next timeout period for a process.

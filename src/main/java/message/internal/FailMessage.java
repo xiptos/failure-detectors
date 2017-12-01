@@ -5,7 +5,11 @@ package message.internal;
  */
 public class FailMessage implements BrokeredMessage {
 
-    private final int processId;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -4551089614857093772L;
+	private final int processId;
 
     /**
      * Construct a new message.

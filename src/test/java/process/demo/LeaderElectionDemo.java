@@ -1,18 +1,17 @@
 package process.demo;
 
-import broker.Broker;
-import broker.FixedDelayBroker;
-import broker.GaussianDelayBroker;
-import org.junit.Ignore;
-import org.junit.Test;
-import process.LeaderElectingEventuallyPerfectFailureDetectorProcess;
-import process.ProcessSmokeTest;
+import static java.lang.Thread.sleep;
 
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
-import static java.lang.Thread.sleep;
-import static org.junit.Assert.assertEquals;
+import org.junit.Ignore;
+import org.junit.Test;
+
+import broker.Broker;
+import broker.GaussianDelayBroker;
+import process.LeaderElectingEventuallyPerfectFailureDetectorProcess;
+import process.ProcessSmokeTest;
 
 /**
  * Demo of {@link process.LeaderElectingEventuallyPerfectFailureDetectorProcess}. Gaussian delay is used.

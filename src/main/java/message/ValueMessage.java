@@ -5,7 +5,11 @@ package message;
  */
 public class ValueMessage extends RoundMessage {
 
-    private final String value;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6382705774837282537L;
+	private final String value;
 
     /**
      * Construct a new message.

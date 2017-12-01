@@ -1,9 +1,8 @@
 package detector;
 
-import listener.SuspectListener;
-import message.TimestampedProcessToProcessMessage;
-
 import java.util.Set;
+
+import listener.SuspectListener;
 
 /**
  * A failure detector module that can be used by a process to overcome the impossibility result of reaching consensus

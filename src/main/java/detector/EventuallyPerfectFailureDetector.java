@@ -1,7 +1,6 @@
 package detector;
 
 import detector.timeout.AdaptiveAverageTimeoutStrategy;
-import detector.timeout.AdaptiveMaxTimeoutStrategy;
 import detector.timeout.TimeoutStrategy;
 import message.TimestampedProcessToProcessMessage;
 
